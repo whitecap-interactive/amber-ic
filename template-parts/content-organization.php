@@ -242,7 +242,7 @@
                     <div class="details-header loop-padding">
                         <h3><span class="dashicons dashicons-paperclip dash-large"></span> Documents <!--&nbsp; &#187;--></h3>
                     </div>
-                    <div class="ten-twenty-four row loop-padding clearfix">
+                    <div class="amber-ic-container">
                         <p>You must be assigned to this organization to view it’s documents.</p>
                     </div>
 
@@ -278,7 +278,7 @@
             <div class="details-header loop-padding">
                 <h3>Members Only <!--&nbsp; &#187;--></h3>
             </div>
-            <div class="ten-twenty-four row loop-padding clearfix">
+            <div class="amber-ic-container">
                 <p>You must be logged in to view the complete member directory and document repository. Please <a href="/database" style="color:#866787!important">login here</a>.</p>
             </div>
         

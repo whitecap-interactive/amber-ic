@@ -13,11 +13,10 @@ get_header(); ?>
     .widget-title {color:#000 !important;}
 </style>
 
-<div class="container-fluid">
 
 	<?php if ( ! dynamic_sidebar( 'sidebar-above-columns' ) ) : endif; ?>
 
-    <div class="ten-twenty-four row clearfix">
+    <div class="amber-ic-container">
         <div class="loop-padding">
             <?php while ( have_posts() ) : the_post();
 
@@ -70,6 +69,5 @@ get_header(); ?>
 
 	<?php if ( ! dynamic_sidebar( 'sidebar-below-columns' ) ) : endif; ?>
 
-</div>
 
 <?php get_footer(); ?>

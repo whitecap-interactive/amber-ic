@@ -7,12 +7,11 @@
 
 get_header(); ?>
 
-<div class="container-fluid">
 
     <div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">    
     
-			<div class="ten-twenty-four row clearfix loop-padding">
+			<div class="amber-ic-container">
 				<?php if ( ! dynamic_sidebar( 'sidebar-above-columns' ) ) : endif; ?>
                 
                 <?php if ( ! dynamic_sidebar( 'sidebar-top' ) ) : endif; ?>
@@ -34,7 +33,7 @@ get_header(); ?>
 			</div><!-- #ten twenty four -->	
             
             <div class="body-callout-box light-gray-callout row clearfix" style="background:#866787; color:#fff; font-size: 1.2em; border: 0;">
-                <div class="ten-twenty-four">
+                <div class="amber-ic-container">
                     <div class="callout-description center-align">
                         <h2>QUESTIONS?</h2>
                         For questions about using the site or your existing membership, please use the <a href="/database/request-access" style="color:#fff;">'Contact Us'</a> button.<br />If you wish to request an account, please use the <a href="/database/request-access" style="color:#fff;">‘Request Access’</a> button.
@@ -52,8 +51,6 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 	
-
-</div><!-- #container fluid -->
 
 
 <?php get_footer(); ?>
