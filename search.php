@@ -8,9 +8,8 @@
  */
 
 get_header(); ?>
-<div class="container-fluid">
 
-    <div class="ten-twenty-four row clearfix">
+    <div class="amber-ic-container">
     	<?php if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
     	
         <section id="primary" class="content-area">
@@ -85,7 +84,7 @@ get_header(); ?>
 
     
         <div class="body-callout-box light-gray-callout row clearfix" style="background:#866787; color:#fff; font-size: 1.2em; border: 0;">
-            <div class="ten-twenty-four">
+            <div class="amber-ic-container">
                 <div class="callout-description center-align">
                     <h2>QUESTIONS?</h2>
                     For questions about using the site or your existing membership, please use the <a href="/database/request-access" style="color:#fff;">'Contact Us'</a> button. If you wish to request an account, please use the <a href="/database/request-access" style="color:#fff;">‘Request Access’</a> button.
@@ -97,7 +96,6 @@ get_header(); ?>
             </div>
         </div> <!-- #questions -->   
 
-</div>
 
 
 <?php get_footer(); ?>

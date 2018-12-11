@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<div class="container-fluid database-section">
+<div class="database-section">
 	
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -65,7 +65,7 @@ get_header(); ?>
         
         
 		<!-- SEARCH BAR -->
-		<div class="ten-twenty-four row clearfix loop-padding" style="margin: 30px auto;">
+		<div class="amber-ic-container" style="margin: 30px auto;">
             <aside style="width: 100%;" id="" class="">
                 <form role="search" method="get" class="search-form" action="/">
                     <label>
@@ -85,14 +85,14 @@ get_header(); ?>
         </div>
         
         <!--<div class="body-callout-box row clearfix" style="background:url(http://tribaldatabase.dev/wp-content/uploads/2016/12/database_sunset_banner-e1481584371541.jpg); background-size: cover; background-position: center bottom; border: 0; color:#fff; min-height: 500px;">
-            <div class="ten-twenty-four">
+            <div class="amber-ic-container">
                 <h2>ABOUT THE DATABASE</h2>
                 Lorem ipsum dolor sit amet, ea sit autem facilis graecis. Utinam luptatum urbanitas te cum, fabellas nominati neglegentur eu nam. Mel ne modus tation, et vidisse corpora has. An bonorum dolorum cum. In nostro officiis sed. Sea at augue erant recusabo, pri ex quaeque imperdiet intellegam, ad cum amet omnes equidem.    
             </div>
         </div>-->
         
         <div class="body-callout-box light-gray-callout row clearfix" style="background:#866787; color:#fff; font-size: 1.2em; border: 0;">
-            <div class="ten-twenty-four">
+            <div class="amber-ic-container">
                 <div class="callout-description center-align">
                     <h2>QUESTIONS?</h2>
                     For questions about using the site or your existing membership, please use the <a href="/database/request-access" style="color:#fff;">'Contact Us'</a> button.<br />If you wish to request an account, please use the <a href="/database/request-access" style="color:#fff;">‘Request Access’</a> button.
@@ -113,6 +113,6 @@ get_header(); ?>
 	</div><!-- #primary -->
 	
 
-</div><!-- #container fluid -->
+</div><!-- #database section -->
 
 <?php get_footer(); ?>

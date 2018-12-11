@@ -12,14 +12,13 @@
 
 get_header(); ?>
 
-<div class="container-fluid">
 	
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 			<?php if ( ! dynamic_sidebar( 'sidebar-top' ) ) : endif; ?>
 
-			<div class="ten-twenty-four row clearfix loop-padding">
+			<div class="amber-ic-container">
 
 							<?php
 				/**
@@ -160,6 +159,5 @@ get_header(); ?>
 	</div><!-- #primary -->
 	
 
-</div><!-- #container fluid -->
 
 <?php get_footer(); ?>
