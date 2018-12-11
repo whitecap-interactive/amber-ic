@@ -7,7 +7,7 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package Tribal Database
+ * @package amber-ic
  */
 
 get_header(); ?>
@@ -22,7 +22,7 @@ get_header(); ?>
 			<div class="ten-twenty-four row clearfix loop-padding">
 				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php get_template_part( 'content', 'user-login' ); ?>
+					<?php get_template_part( 'template-parts/content', 'user-login' ); ?>
 
 					<?php
 						// If comments are open or we have at least one comment, load up the comment template

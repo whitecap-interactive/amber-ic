@@ -639,8 +639,10 @@ a:hover, a:active {
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
-	width: 100%;
+	/*float: left;*/
+	/*width: 100%;*/
+	text-align: center;
+	margin: 0 auto;
 }
 
 .main-navigation ul {
@@ -679,6 +681,7 @@ a:hover, a:active {
 }
 
 .main-navigation li {
+	display: inline-block;
 	float: left;
 	position: relative;
 }
@@ -982,4 +985,43 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+
+
+.clearfix {
+  overflow: auto;
+}
+
+header {
+	height: 60px;
+	background: #588594;
+	width: 100%;
+	text-align: center;
+}
+
+.site-branding {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+
+.menu-container {
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+#primary-menu li:nth-child(n+4) {
+	float: right;
+}
+
+#primary-menu li a {
+	color: #fff;
+}
+
+#sub-menu li a { 
+	color: #ccc; 
 }
