@@ -26,25 +26,10 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$amber_ic_description = get_bloginfo( 'description', 'display' );
-			if ( $amber_ic_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $amber_ic_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
+			<a href="/">&nbsp;</a>
 		</div><!-- .site-branding -->
 
-		<div class="menu-container clearfix">
+		<div class="menu-container">
 			<div><nav id="site-navigation" class="main-navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'amber-ic' ); ?></button>
 				<?php
