@@ -395,9 +395,9 @@ input,
 select,
 optgroup,
 textarea {
-	color: #404040;
+	color: #707070;
 	font-family: Arial, sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	font-size: 1rem;
 	line-height: 1.5;
 }
@@ -452,6 +452,39 @@ mark, ins {
 
 big {
 	font-size: 125%;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: bold;
+	font-family: "Arial Black", sans-serif;
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: 100;
+}
+
+h4 {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+h5 {
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+h6 {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 /*--------------------------------------------------------------
@@ -850,7 +883,7 @@ a:hover, a:active {
 
 .post,
 .page {
-	margin: 0 0 1.5em;
+	/*margin: 0 0 1.5em;*/
 }
 
 .updated:not(.published) {
@@ -1054,6 +1087,10 @@ ul#primary-menu>li {
 
 .sub-menu li a:hover {
 	color: #BB472A;
+}
+
+.content-area {
+	margin: -27px 0 0 0;
 }
 
 .amber-ic-container {
