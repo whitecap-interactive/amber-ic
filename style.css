@@ -648,19 +648,19 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #588594;
 }
 
 a:visited {
-	color: purple;
+	color: #588594;
 }
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	color: #588594;
 }
 
 a:focus {
-	outline: thin dotted;
+	/*outline: thin dotted;*/
 }
 
 a:hover, a:active {
@@ -1035,6 +1035,7 @@ object {
 	text-align: center;
 	position: fixed;
 	z-index: 999;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 .site-title {
@@ -1047,7 +1048,7 @@ object {
 	margin-right: auto;
 	left: 0;
 	right: 0;
-	background: url(/wp-content/themes/amber-ic/images/logo.png) no-repeat;
+	/*background: url(/wp-content/themes/amber-ic/images/logo.png) no-repeat;*/
 	width: 211px;
 	height: 138px;
 }
@@ -1150,10 +1151,14 @@ ul#primary-menu>li {
 
 .site-footer {
 	background: #588594;
-	height: 400px;
+	height: auto;
 	color: #fff;
 	font-size: 14px;
-	padding: 100px 0 0 0;
+	padding: 100px 0 40px 0;
+}
+
+.site-footer a {
+	color: #fff;
 }
 
 .site-footer .logo {

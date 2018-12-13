@@ -26,7 +26,7 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<a href="/"></a>
+			<a href="/"><img src="/wp-content/themes/amber-ic/images/logo.png" width="211" border="0" alt="AMBER Alert in Indian Country" /></a>
 		</div><!-- .site-branding -->
 
 		<div class="menu-container">

@@ -29,7 +29,7 @@
 				P.O. Box 2277<br />
 				Appleton, WI 54912-2277<br />
 				877-712-6237 (877-71-AMBER)<br />
-				askamber@fvtc.edu
+				<a href="mailto:askamber@fvtc.edu?subject=AMBER-IC Website Inquiry">askamber@fvtc.edu</a>
 			</div>
 		</div>
 		<div class="site-info">
