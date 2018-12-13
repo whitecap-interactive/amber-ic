@@ -26,7 +26,7 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<a href="/">&nbsp;</a>
+			<a href="/"></a>
 		</div><!-- .site-branding -->
 
 		<div class="menu-container">

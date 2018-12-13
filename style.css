@@ -1048,6 +1048,7 @@ object {
 	background: url(/wp-content/themes/amber-ic/images/logo.png) no-repeat;
 	width: 211px;
 	height: 138px;
+	z-index: 999;
 }
 
 .site-branding a {
@@ -1091,7 +1092,7 @@ ul#primary-menu>li {
 }
 
 .content-area {
-	margin: -27px 0 0 0;
+	
 }
 
 .page-container, .single-container, .archive-container {
@@ -1125,7 +1126,7 @@ ul#primary-menu>li {
 
 .entry-title, .page-title {
 	text-transform: uppercase;
-	margin: 130px 0 10px 0;
+	margin: 110px 0 10px 0;
 }
 
 .entry-meta {
