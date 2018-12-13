@@ -16,7 +16,7 @@
 
 	<?php amber_ic_post_thumbnail(); ?>
 
-	<div class="entry-content">
+	<div class="page-content">
 		<?php
 		the_content();
 
@@ -25,7 +25,7 @@
 			'after'  => '</div>',
 		) );
 		?>
-	</div><!-- .entry-content -->
+	</div><!-- .page-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">

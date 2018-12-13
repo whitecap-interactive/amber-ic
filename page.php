@@ -20,7 +20,7 @@ get_header(); ?>
 
 			<?php if ( ! dynamic_sidebar( 'sidebar-top' ) ) : endif; ?>
 
-			<div class="amber-ic-container">
+			<div class="page-container">
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<?php get_template_part( 'template-parts/content', 'page' ); ?>

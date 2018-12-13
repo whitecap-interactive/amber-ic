@@ -1093,11 +1093,34 @@ ul#primary-menu>li {
 	margin: -27px 0 0 0;
 }
 
-.amber-ic-container {
-	max-width: 1050px;
+.page-container {
+	/*max-width: 1050px;*/
 	margin: 0 auto;
 }
 
+.single-container {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.entry-title {
+	text-transform: uppercase;
+	margin: 130px 0 10px 0;
+}
+
+.entry-meta {
+	text-align: center;
+	padding: 26px 0 0 0;
+}
+
+.entry-content {
+    width: 800px;
+    position: relative;
+    top: -130px;
+    background: #fff;
+    margin: 0 auto;
+    padding: 30px 50px;
+}
 
 .site-footer {
 	background: #588594;
