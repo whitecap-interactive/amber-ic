@@ -8,7 +8,7 @@
 
 get_header(); ?>
 
-<div class="amber-ic-container">
+<div class="category-container">
 	<?php if ( ! dynamic_sidebar( 'sidebar-above-columns' ) ) : endif; ?>
 	<div class="two-column-margin">
     	<div class="col-sm-8 main-channel">

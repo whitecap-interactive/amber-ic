@@ -404,6 +404,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	line-height: 1.2;
 }
 
 p {
@@ -1093,30 +1094,49 @@ ul#primary-menu>li {
 	margin: -27px 0 0 0;
 }
 
-.page-container {
-	/*max-width: 1050px;*/
-	margin: 0 auto;
-}
-
-.single-container {
+.page-container, .single-container, .archive-container {
 	max-width: 1024px;
 	margin: 0 auto;
 }
 
-.entry-title {
+
+.flex-container {
+	display: flex;
+}
+
+.main-column {
+	width: 75%;
+	margin: 0 20px 0 0;
+}
+
+.sidebar-column {
+	width: 25%;
+}
+
+.archive-thumb {
+	width: 40%;
+	margin: 0 20px 80px 0;
+}
+
+.archive-summary {
+	width: 60%;
+	margin: 0 0 80px 0;
+}
+
+.entry-title, .page-title {
 	text-transform: uppercase;
 	margin: 130px 0 10px 0;
 }
 
 .entry-meta {
 	text-align: center;
-	padding: 26px 0 0 0;
+	padding: 26px 0 10px 0;
 }
 
-.entry-content {
+.single-container .entry-content {
     width: 800px;
     position: relative;
-    top: -130px;
+    top: -110px;
     background: #fff;
     margin: 0 auto;
     padding: 30px 50px;

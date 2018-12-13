@@ -33,7 +33,7 @@ get_header(); ?>
 					?>
 
 				<?php endwhile; // end of the loop. ?>
-			</div><!-- #ten twenty four -->	
+			</div><!-- #page container -->	
 
 			<?php if ( ! dynamic_sidebar( 'sidebar-bottom' ) ) : endif; ?>
 

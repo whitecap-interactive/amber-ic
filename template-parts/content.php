@@ -11,25 +11,14 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-
-		if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				amber_ic_posted_on();
-				amber_ic_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
+		<h1 class="entry-title"><?php the_title(); ?></h1>
+		<div class="entry-meta">
+			<?php the_author(); ?> | <?php the_date(); ?>
+		</div><!-- .entry-meta -->
+        <?php if (has_post_thumbnail() ): ?>
+            <div class="post-image"><?php the_post_thumbnail(); ?></div>
+        <?php endif ?>
 	</header><!-- .entry-header -->
-
-	<?php amber_ic_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
