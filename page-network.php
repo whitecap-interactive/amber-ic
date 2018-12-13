@@ -41,7 +41,7 @@ get_header(); ?>
 
                             if ( ( in_array( 'mega_member', (array) $user->roles ) ) || ( in_array( 'member', (array) $user->roles ) ) || ( in_array( 'administrator', (array) $user->roles ) ) ) { ?>
 
-                                <div class="learn-more blue"><a href="/database/submit-a-document">Submit a Document</a></div>
+                                <div class="learn-more blue"><a href="/network/submit-a-document">Submit a Document</a></div>
                     
                             <?php } }?>
 
@@ -56,9 +56,9 @@ get_header(); ?>
 
 
 				<div class="eq-ht col-3 lt-grey blue-bg">
-					<a href="/database/request-access"> <h3>Request Access</h3></a>
+					<a href="/network/request-access"> <h3>Request Access</h3></a>
 					Request a member account to securely access information and resources related to your tribal organization. Authorized members include those working in tribal leadership, public safety and child protection roles.
-                    <div class="learn-more blue"><a href="/database/request-access">New User</a></div>	
+                    <div class="learn-more blue"><a href="/network/request-access">New User</a></div>	
 				</div>		
 			</div> <!-- end eq height wrapper -->   
 		</aside>
@@ -84,7 +84,7 @@ get_header(); ?>
             </aside>
         </div>
         
-        <!--<div class="body-callout-box row clearfix" style="background:url(http://tribaldatabase.dev/wp-content/uploads/2016/12/database_sunset_banner-e1481584371541.jpg); background-size: cover; background-position: center bottom; border: 0; color:#fff; min-height: 500px;">
+        <!--<div class="body-callout-box row clearfix" style="background:url(http://tribaldatabase.dev/wp-content/uploads/2016/12/network_sunset_banner-e1481584371541.jpg); background-size: cover; background-position: center bottom; border: 0; color:#fff; min-height: 500px;">
             <div class="amber-ic-container">
                 <h2>ABOUT THE DATABASE</h2>
                 Lorem ipsum dolor sit amet, ea sit autem facilis graecis. Utinam luptatum urbanitas te cum, fabellas nominati neglegentur eu nam. Mel ne modus tation, et vidisse corpora has. An bonorum dolorum cum. In nostro officiis sed. Sea at augue erant recusabo, pri ex quaeque imperdiet intellegam, ad cum amet omnes equidem.    
@@ -95,10 +95,10 @@ get_header(); ?>
             <div class="amber-ic-container">
                 <div class="callout-description center-align">
                     <h2>QUESTIONS?</h2>
-                    For questions about using the site or your existing membership, please use the <a href="/database/request-access" style="color:#fff;">'Contact Us'</a> button.<br />If you wish to request an account, please use the <a href="/database/request-access" style="color:#fff;">‘Request Access’</a> button.
+                    For questions about using the site or your existing membership, please use the <a href="/network/request-access" style="color:#fff;">'Contact Us'</a> button.<br />If you wish to request an account, please use the <a href="/network/request-access" style="color:#fff;">‘Request Access’</a> button.
                     <br /><br />
                     <div class="callout-button clearfix">
-                        <div class="learn-more blue" style="display:inline;text-align:center;"><a href="/database/contact">Contact Us</a></div> &nbsp; &nbsp; <div class="learn-more blue" style="display:inline;text-align:center;"><a href="/database/request-access">Request Access</a></div>
+                        <div class="learn-more blue" style="display:inline;text-align:center;"><a href="/network/contact">Contact Us</a></div> &nbsp; &nbsp; <div class="learn-more blue" style="display:inline;text-align:center;"><a href="/network/request-access">Request Access</a></div>
                     </div>
                 </div>
             </div>

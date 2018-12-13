@@ -82,13 +82,13 @@ get_header(); ?>
 		                        echo '(Administrator)';
 		                    }
 		                ?> 
-		                <br /><a href="/database/profile">Profile</a> | <a href="<?php echo wp_logout_url( $redirect ); ?>">Logout</a>
+		                <br /><a href="/network/profile">Profile</a> | <a href="<?php echo wp_logout_url( $redirect ); ?>">Logout</a>
 
 
 		            <?php } 
 		            else {
 		                echo '<h3>Welcome, guest!</h3>';
-		                echo '<a href="/wp-admin">Sign In</a> | <a href="/database/request-access">Request Access</a>';
+		                echo '<a href="/wp-admin">Sign In</a> | <a href="/network/request-access">Request Access</a>';
 		            } ?>
 		        </div>    <br clear="all" />    
 				
@@ -141,11 +141,11 @@ get_header(); ?>
 				            <h3>Database Links</h3>
 				            <div class="menu-temporary-database-menu-container">
                                 <ul id="menu-temporary-database-menu" class="menu">
-                                    <li class="menu-item"><a href="/database/">Database Portal</a></li>
+                                    <li class="menu-item"><a href="/network/">Database Portal</a></li>
                                     <li class="menu-item"><a href="/organizations">Organizations</a></li>
-                                    <li class="menu-item"><a href="/database/contact/">Contact Us</a></li>
-                                    <li class="menu-item"><a href="/database/request-access/">Request Access</a></li>
-                                    <li class="menu-item"><a href="/database/submit-a-document/">Submit a Document</a></li>
+                                    <li class="menu-item"><a href="/network/contact/">Contact Us</a></li>
+                                    <li class="menu-item"><a href="/network/request-access/">Request Access</a></li>
+                                    <li class="menu-item"><a href="/network/submit-a-document/">Submit a Document</a></li>
                                     <li class="menu-item"><a href="/wp-admin/profile">Update Profile</a></li>
                                 </ul>
                             </div>

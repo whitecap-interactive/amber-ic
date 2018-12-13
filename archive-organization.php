@@ -50,16 +50,16 @@ get_header(); ?>
                                 echo '(Member)';
                             }
                         ?> 
-                        <br /><a href="/database/profile">Profile</a> | <a href="<?php echo wp_logout_url( $redirect ); ?>">Logout</a>
+                        <br /><a href="/network/profile">Profile</a> | <a href="<?php echo wp_logout_url( $redirect ); ?>">Logout</a>
 
 
                     <?php } 
                     else {
                         echo '<h3>Welcome, Guest!</h3>';
-                        echo '<a href="/wp-admin">Sign In</a> | <a href="/database/request-access">Request Access</a>';
+                        echo '<a href="/wp-admin">Sign In</a> | <a href="/network/request-access">Request Access</a>';
                     } ?>
                 </div>
-                <h2 class="page-title">Organizations <span class="back-to-link"> &nbsp; | <a href="/database">Back to Database Home &#187;</a></span></h2>
+                <h2 class="page-title">Organizations <span class="back-to-link"> &nbsp; | <a href="/network">Back to Database Home &#187;</a></span></h2>
             </header><!-- .page-header -->
 
             <?php 
@@ -250,10 +250,10 @@ get_header(); ?>
             <div class="amber-ic-container">
                 <div class="callout-description center-align">
                     <h2>QUESTIONS?</h2>
-                    For questions about using the site or your existing membership, please use the <a href="/database/request-access" style="color:#fff;">'Contact Us'</a> button.<br />If you wish to request an account, please use the <a href="/database/request-access" style="color:#fff;">‘Request Access’</a> button.
+                    For questions about using the site or your existing membership, please use the <a href="/network/request-access" style="color:#fff;">'Contact Us'</a> button.<br />If you wish to request an account, please use the <a href="/network/request-access" style="color:#fff;">‘Request Access’</a> button.
                     <br /><br />
                     <div class="callout-button clearfix">
-                        <div class="learn-more blue" style="display:inline;text-align:center;"><a href="/database/contact">Contact Us</a></div> &nbsp; &nbsp; <div class="learn-more blue" style="display:inline;text-align:center;"><a href="/database/request-access">Request Access</a></div>
+                        <div class="learn-more blue" style="display:inline;text-align:center;"><a href="/network/contact">Contact Us</a></div> &nbsp; &nbsp; <div class="learn-more blue" style="display:inline;text-align:center;"><a href="/network/request-access">Request Access</a></div>
                     </div>
                 </div>
             </div>

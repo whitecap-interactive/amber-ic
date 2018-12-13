@@ -91,13 +91,13 @@
                         echo '(Member)';
                     }
                 ?> 
-                <br /><a href="/database/profile">Profile</a> | <a href="<?php echo wp_logout_url( $redirect ); ?>">Logout</a>
+                <br /><a href="/network/profile">Profile</a> | <a href="<?php echo wp_logout_url( $redirect ); ?>">Logout</a>
 
                 <br clear="all" />
             <?php } 
             else {
                 echo '<h3>Welcome, Guest!</h3>';
-                echo '<a href="/wp-admin">Sign In</a> | <a href="/database/request-access">Request Access</a>';
+                echo '<a href="/wp-admin">Sign In</a> | <a href="/network/request-access">Request Access</a>';
             } ?>
         </div>    <br clear="all" />    
         <h2 class="page-title"><?php the_title(); ?><!-- <span class="back-to-link"> &nbsp; | <a href="/organizations">Back to Organizations &#187;</a></span>--></h2>
@@ -139,19 +139,19 @@
             <h3><span class="dashicons dashicons-admin-links dash-large"></span> Database Links</h3>
             <div class="menu-temporary-database-menu-container">
                 <ul id="menu-temporary-database-menu" class="menu">
-                    <li class="menu-item"><a href="/database/">Database Portal</a></li>
+                    <li class="menu-item"><a href="/network/">Database Portal</a></li>
                     <li class="menu-item"><a href="/organizations">Organizations</a></li>
-                    <li class="menu-item"><a href="/database/contact/">Contact Us</a></li>
-                    <li class="menu-item"><a href="/database/request-access/">Request Access</a></li>
-                    <li class="menu-item"><a href="/database/submit-a-document/">Submit a Document</a></li>
-                    <li class="menu-item"><a href="/database/profile">Update Profile</a></li>
+                    <li class="menu-item"><a href="/network/contact/">Contact Us</a></li>
+                    <li class="menu-item"><a href="/network/request-access/">Request Access</a></li>
+                    <li class="menu-item"><a href="/network/submit-a-document/">Submit a Document</a></li>
+                    <li class="menu-item"><a href="/network/profile">Update Profile</a></li>
                 </ul>
             </div>
             <!--<div class="learn-more blue" style="text-align:left;padding-left:39px;"><a href="/wp-admin/profile">Update Profile</a></div>-->
         </div>
         <br clear="all" />
         <div class="col-sm-8 col-sm-offset-2 white-center-callout">
-            Do you have updated information or corrections for this Tribal Organization's contact information? Please share them with us using the <a href="<?php echo get_site_url(); ?>/database/contact/">Contact Us</a> form. 
+            Do you have updated information or corrections for this Tribal Organization's contact information? Please share them with us using the <a href="<?php echo get_site_url(); ?>/network/contact/">Contact Us</a> form. 
         </div>
         <br clear="all" />
         <?php 
@@ -214,7 +214,7 @@
                 if ( ( in_array( 'mega_member', (array) $current_user->roles ) ) || ( in_array( 'administrator', (array) $current_user->roles ) ) || ( $current_user->organization == $org_name )  ) { ?>
 
                     <div class="details-header">
-                        <h3><span class="dashicons dashicons-paperclip dash-large"></span> Documents<!-- &nbsp; &#187;--><span class="float-right"><span class="dashicons dashicons-welcome-add-page dash-large"></span> <a href="/database/submit-a-document">Submit a Document &#187;</a></span></h3>
+                        <h3><span class="dashicons dashicons-paperclip dash-large"></span> Documents<!-- &nbsp; &#187;--><span class="float-right"><span class="dashicons dashicons-welcome-add-page dash-large"></span> <a href="/network/submit-a-document">Submit a Document &#187;</a></span></h3>
                     </div>
             
                     <div class="loop-padding">
@@ -279,7 +279,7 @@
                 <h3>Members Only <!--&nbsp; &#187;--></h3>
             </div>
             <div class="amber-ic-container">
-                <p>You must be logged in to view the complete member directory and document repository. Please <a href="/database" style="color:#866787!important">login here</a>.</p>
+                <p>You must be logged in to view the complete member directory and document repository. Please <a href="/network" style="color:#866787!important">login here</a>.</p>
             </div>
         
         <?php } ?>   
