@@ -124,6 +124,8 @@ function amber_ic_scripts() {
 
 	wp_enqueue_script( 'amber-ic-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
+	wp_enqueue_script( 'amber-ic-global', get_template_directory_uri() . '/js/amber-ic.js', array(), '20181215', true );
+
 	wp_enqueue_script( 'amber-ic-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -176,7 +178,7 @@ function create_post_type() {
 		'public' => true,
 		'has_archive' => true,
 		'capability_type' => 'post',
-		'rewrite' => array('slug' => 'organizations'),  
+		'rewrite' => array('slug' => 'network'),  
 		'supports' => array(
             'title',
             'excerpt',
