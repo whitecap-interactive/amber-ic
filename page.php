@@ -18,8 +18,6 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<?php if ( ! dynamic_sidebar( 'sidebar-top' ) ) : endif; ?>
-
 			<div class="page-container">
 				<?php while ( have_posts() ) : the_post(); ?>
 
@@ -33,9 +31,10 @@ get_header(); ?>
 					?>
 
 				<?php endwhile; // end of the loop. ?>
-			</div><!-- #page container -->	
 
-			<?php if ( ! dynamic_sidebar( 'sidebar-bottom' ) ) : endif; ?>
+				<?php get_sidebar(); ?>
+
+			</div><!-- #page container -->	
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

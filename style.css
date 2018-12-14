@@ -708,12 +708,12 @@ a:hover, a:active {
 }
 
 .main-navigation ul ul a {
-	width: 200px;
+	width: 160px;
 }
 
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
-	left: -30px;
+	left: -10px;
 	color: #BB472A;
 }
 
