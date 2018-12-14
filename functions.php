@@ -178,7 +178,7 @@ function create_post_type() {
 		'public' => true,
 		'has_archive' => true,
 		'capability_type' => 'post',
-		'rewrite' => array('slug' => 'network'),  
+		'rewrite' => array('slug' => 'organizations'),  
 		'supports' => array(
             'title',
             'excerpt',
@@ -494,7 +494,7 @@ function user_meta_field_config_populate_categories( $field, $fieldID, $formName
 
 //List of admin email notification recipients
 function changeUMPAdminEmail( $adminEmails ) {
-    return array( 'tribaldatabase@ncjtc.org' );
+    return array( 'david@whitecap.io' );
 }
 add_filter( 'user_meta_admin_email_recipient', 'changeUMPAdminEmail' );	
 
@@ -570,4 +570,22 @@ function remove_admin_bar() {
 	}
 }
 
+add_filter( 'get_the_archive_title', function ($title) {
 
+    if ( is_category() ) {
+
+            $title = single_cat_title( '', false );
+
+        } elseif ( is_tag() ) {
+
+            $title = single_tag_title( '', false );
+
+        } elseif ( is_author() ) {
+
+            $title = '<span class="vcard">' . get_the_author() . '</span>' ;
+
+        }
+
+    return $title;
+
+});

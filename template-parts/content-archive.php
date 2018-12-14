@@ -19,6 +19,7 @@
 		<div class="archive-summary">
 			<h4><a href="<?php echo the_permalink();?>"><?php echo the_title(); ?></a></h4>
 			<?php the_author(); ?> | <?php echo the_date(); ?>
+			<p><?php the_excerpt(); ?></p>
 		</div>
 	</div>
 </article><!-- #post-<?php the_ID(); ?> -->
