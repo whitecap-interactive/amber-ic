@@ -10,6 +10,8 @@
 get_header();
 ?>
 
+<div class="page-container">
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
@@ -55,6 +57,8 @@ get_header();
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+</div><!-- #page container -->
 
 <?php
 get_footer();

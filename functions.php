@@ -193,6 +193,32 @@ function create_post_type() {
 	);
 } 
 
+add_action( 'init', 'create_resources' );
+function create_resources() {
+	register_post_type( 'resources',
+		array(
+			'labels' => array(
+				'name' => __( 'Resources' ),
+				'singular_name' => __( 'Resource' )
+			),
+		'public' => true,
+		'has_archive' => true,
+		'capability_type' => 'post',
+		'rewrite' => array('slug' => 'resources'),  
+		'supports' => array(
+            'title',
+            'excerpt',
+            'editor',
+            'custom-fields',
+            'revisions',
+            'thumbnail',
+            'author'),
+        'taxonomies' => array('category', 'post_tag'),
+        /*'show_in_nav_menus' => true*/
+		)
+	);
+} 
+
 
 /**
  * META BOXES
