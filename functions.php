@@ -195,7 +195,7 @@ function create_post_type() {
 
 add_action( 'init', 'create_resources' );
 function create_resources() {
-	register_post_type( 'resources',
+	register_post_type( 'amber_resources',
 		array(
 			'labels' => array(
 				'name' => __( 'Resources' ),
@@ -204,7 +204,7 @@ function create_resources() {
 		'public' => true,
 		'has_archive' => true,
 		'capability_type' => 'post',
-		'rewrite' => array('slug' => 'resources'),  
+		'rewrite' => array('slug' => 'amber-resources'),  
 		'supports' => array(
             'title',
             'excerpt',
