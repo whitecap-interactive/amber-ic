@@ -213,11 +213,86 @@ function create_resources() {
             'revisions',
             'thumbnail',
             'author'),
-        'taxonomies' => array('category', 'post_tag'),
+        'taxonomies' => array('resource_category'),
         /*'show_in_nav_menus' => true*/
 		)
 	);
 } 
+
+
+/**
+ * AMBER-IC META BOXES
+ */
+add_filter( 'rwmb_meta_boxes', 'amberic_register_meta_boxes' );
+function amberic_register_meta_boxes( $meta_boxes ) {
+    
+    
+    $prefix = 'amberic_';
+    
+    // META BOXES FOR RESOURCES CUSTOM POST TYPE
+    $meta_boxes[] = array(
+        'title'      => __( 'Resource Details', $prefix ),
+        'post_types' => 'amber_resources',
+        'fields'     => array(
+			// TEXT
+			array(
+				'name' => __( 'URL', $prefix ),
+				'id'   => "{$prefix}url",
+				'type' => 'text',
+			),
+        )
+    );
+
+
+    // ALLOW ATTACHMENT OF FILES TO ORGANIZATION CUSTOM POST TYPE
+    $meta_boxes[] = array(
+        'title'      => __( 'Assessments & Attached Files', 'tribal' ),
+        'post_types' => 'organization',
+        'fields'     => array(
+            // FILE ADVANCED (WP 3.5+)
+			array(
+				'name'             => __( 'File Upload', 'tribal' ),
+				'id'               => "{$prefix}file_advanced",
+				'type'             => 'file_advanced',
+				'mime_type'        => 'application,audio,video', // Leave blank for all file types
+			),
+        )
+    );
+    return $meta_boxes;
+}
+
+function resources_taxonomy_init() {
+
+	// Add new taxonomy, make it hierarchical (like categories)
+	$labels = array(
+		'name'              => _x( 'Resource Categories', 'taxonomy general name' ),
+		'singular_name'     => _x( 'Resource Category', 'taxonomy singular name' ),
+		'search_items'      => __( 'Search Resource Categories' ),
+		'all_items'         => __( 'All Resource Categories' ),
+		'parent_item'       => __( 'Primary Resource Category' ),
+		'parent_item_colon' => __( 'Primary Resource Categories' ),
+		'edit_item'         => __( 'Edit Resource Categories' ),
+		'update_item'       => __( 'Update Resource Categories' ),
+		'add_new_item'      => __( 'Add New Resource Categories' ),
+		'new_item_name'     => __( 'New Resource Categories Name' ),
+		'menu_name'         => __( 'Resource Categories' ),
+	);
+	// create a new taxonomy
+	register_taxonomy(
+		'resource_category',
+		'amber_resources',
+		array(
+			//'rewrite' => array( 'slug' => 'resources-tax' ),
+			'hierarchical'      => true,
+			'labels' => $labels,
+			'show_ui'           => true,
+    		'show_admin_column' => true,
+    		'query_var'         => true,
+		)
+	);
+}
+add_action( 'init', 'resources_taxonomy_init' );
+
 
 
 /**
