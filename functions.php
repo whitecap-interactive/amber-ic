@@ -236,10 +236,17 @@ function amberic_register_meta_boxes( $meta_boxes ) {
         'fields'     => array(
 			// TEXT
 			array(
-				'name' => __( 'URL', $prefix ),
+				'name' => __( 'External Resource URL', $prefix ),
 				'id'   => "{$prefix}url",
 				'type' => 'text',
 			),
+            // FILE ADVANCED (WP 3.5+)
+			array(
+				'name'             => __( 'PDF Resource', $prefix ),
+				'id'               => "{$prefix}pdf",
+				'type'             => 'file_advanced',
+				'mime_type'        => 'application,audio,video', // Leave blank for all file types
+			),			
         )
     );
 
