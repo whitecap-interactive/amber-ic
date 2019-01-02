@@ -31,7 +31,7 @@
 
 		<div class="menu-container">
 			<div><nav id="site-navigation" class="main-navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'amber-ic' ); ?></button>
+				<button class="menu-toggle mobile-menu" aria-controls="primary-menu" aria-expanded="false">Menu</button>
 				<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',
