@@ -685,7 +685,7 @@ a:hover, a:active {
 	list-style: none;
 	margin: 120px 0 0 0;
 	padding-left: 0;
-	/*text-align: left;*/
+	width: 100%;
 
 }
 
@@ -693,7 +693,8 @@ a:hover, a:active {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
-	top: 100%;
+	/*top: 100%;*/
+	margin: 0;
 	left: -999em;
 	z-index: 99999;
 }
@@ -714,7 +715,7 @@ a:hover, a:active {
 
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
-	left: -10px;
+	left: 0;
 	color: #BB472A;
 }
 
@@ -745,12 +746,18 @@ a:hover, a:active {
 }
 
 @media screen and (min-width: 60em) {
+
+	.main-navigation ul li:hover > ul,
+	.main-navigation ul li.focus > ul {
+		left: -10px;
+	}	
 	.menu-toggle {
 		display: none;
 	}
 	.main-navigation ul {
 		display: block;
 		margin: 0;
+		width: auto;
 	}
 	.main-navigation li {
 		display: inline-block;
@@ -1103,6 +1110,8 @@ ul#primary-menu>li {
 #primary-menu>li>a {
 	color: #fff;
 	height: 43px;
+	line-height: 40px;
+    border-bottom: 1px solid #fff;
 }
 
 #primary-menu>li>a:hover {
@@ -1135,6 +1144,10 @@ ul#primary-menu>li {
 		width: 140px;
 		background-color: transparent;
 	}
+	ul#primary-menu>li>a {
+		line-height: auto;
+		border-bottom: none;
+	}	
 	.menu-container {
 	    background: #588594;
 	}	
@@ -1268,7 +1281,7 @@ ul#primary-menu>li {
 	}
 
 	.flex-container {
-		flex-direction: column;
+		/*flex-direction: row;*/
 	}	
 
 	.site-footer {
