@@ -1145,7 +1145,7 @@ ul#primary-menu>li {
 		background-color: transparent;
 	}
 	ul#primary-menu>li>a {
-		line-height: auto;
+		line-height: 30px;
 		border-bottom: none;
 	}	
 	.menu-container {
@@ -1198,7 +1198,8 @@ ul#primary-menu>li {
 	padding: 0;
 }
 
-.archive-summary h4::after {
+/*.archive-summary h4::after {*/
+h4::after {	
     content: '';
     display: block;
     position: relative;
