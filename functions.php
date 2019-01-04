@@ -240,6 +240,12 @@ function amberic_register_meta_boxes( $meta_boxes ) {
 				'id'   => "{$prefix}url",
 				'type' => 'text',
 			),
+            // TEXT
+			array(
+				'name' => __( 'Secondary External Resource URL', $prefix ),
+				'id'   => "{$prefix}url2",
+				'type' => 'text',
+			),
             // FILE ADVANCED (WP 3.5+)
 			array(
 				'name'             => __( 'PDF Resource', $prefix ),
