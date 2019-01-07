@@ -1165,7 +1165,7 @@ ul#primary-menu>li {
 	
 }
 
-.page-container, .single-container, .archive-container {
+.page-container, .single-container, .archive-container, .resources-container {
 	max-width: 1024px;
 	margin: 0 auto;
 	padding: 0 24px;
@@ -1179,6 +1179,11 @@ ul#primary-menu>li {
 .flex-container {
 	display: flex;
 	flex-direction: row;
+}
+
+.resources-container .flex-container {
+	flex-wrap: wrap;
+	flex-direction: column;
 }
 
 .main-column {
@@ -1216,9 +1221,28 @@ h4::after {
     border-bottom: 3px solid #BB472A;
 }
 
+/*.archive-summary h4::after {*/
+h6::after {	
+    content: '';
+    display: block;
+    position: relative;
+    top: 4px;
+    width: 50%;
+    left: 0;
+    border-bottom: 3px solid #BB472A;
+}
+
 .archive-summary a {
 	color: #7F7F7F;
 	text-decoration: none;
+}
+
+.resource-card {
+	width: 100%;
+	margin: 0 10px 20px 10px;
+	-webkit-box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.25);
+	box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.25);
 }
 
 .entry-title, .page-title {
@@ -1278,6 +1302,18 @@ h4::after {
 }
 
 
+@media screen and (min-width: 30em) {
+	
+	.resources-container .flex-container {
+		flex-direction: row;
+	}
+
+	.resource-card {
+		width: 45%;
+	}	
+
+}
+
 @media screen and (min-width: 60em) {
 	
 	.mobile-footer {
@@ -1286,11 +1322,11 @@ h4::after {
 
 	.desktop-footer {
 		display: block;
-	}
-
-	.flex-container {
-		/*flex-direction: row;*/
 	}	
+
+	.resource-card {
+		width: 22%;
+	}
 
 	.site-footer {
 		padding: 100px 0 40px 0;

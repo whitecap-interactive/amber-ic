@@ -242,7 +242,7 @@ function amberic_register_meta_boxes( $meta_boxes ) {
 			),
             // TEXT
 			array(
-				'name' => __( 'Secondary External Resource URL', $prefix ),
+				'name' => __( 'Additional External Resource URL', $prefix ),
 				'id'   => "{$prefix}url2",
 				'type' => 'text',
 			),
