@@ -1186,10 +1186,6 @@ ul#primary-menu>li {
 	flex-direction: column;
 }
 
-.resource-summary {
-	padding: 10px;
-}
-
 .main-column {
 	width: 75%;
 	margin: 0 20px 0 0;
@@ -1263,6 +1259,7 @@ h6::after {
 
 .resource-summary {
 	height: 100%;
+	padding: 0 16px 50px 16px;
 }
 
 .resource-card article {
