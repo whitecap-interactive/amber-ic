@@ -1186,6 +1186,10 @@ ul#primary-menu>li {
 	flex-direction: column;
 }
 
+.resource-summary {
+	padding: 10px;
+}
+
 .main-column {
 	width: 75%;
 	margin: 0 20px 0 0;
@@ -1229,6 +1233,17 @@ h6::after {
     top: 4px;
     width: 50%;
     left: 0;
+    border-bottom: 3px solid #DCD1A2;
+}
+
+/*.archive-summary h4::after {*/
+.resources-container h2::after {	
+    content: '';
+    display: block;
+    position: relative;
+    top: 4px;
+    width: 50%;
+    left: 0;
     border-bottom: 3px solid #BB472A;
 }
 
@@ -1239,10 +1254,42 @@ h6::after {
 
 .resource-card {
 	width: 100%;
-	margin: 0 10px 20px 10px;
+	margin: 0 12px 60px 12px;
 	-webkit-box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.25);
 	-moz-box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.25);
 	box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.25);
+}
+
+.amberic-button {
+   	background: #BB472A;
+	border-radius: 50px 50px 50px 50px;
+	-moz-border-radius: 50px 50px 50px 50px;
+	-webkit-border-radius: 50px 50px 50px 50px;
+   	border: 1px solid #BB472A;
+   	display: block;
+   	padding: 8px 16px;
+   	text-align: center;
+   	color: #fff;
+   	text-decoration: none;
+}
+
+.jump-link {
+	width: 100%;
+	margin: 20px 20% 0 20%;
+}
+
+.resources-container hr {
+	margin: 2em 0 1em 0;
+	width: 100%;
+}
+
+.amberic-button:active, .amberic-button:visited {
+	color: #fff;
+}
+
+.amberic-button:hover {
+	color: #BB472A;
+	background: #fff;
 }
 
 .entry-title, .page-title {
@@ -1326,6 +1373,11 @@ h6::after {
 
 	.resource-card {
 		width: 22%;
+	}
+
+	.jump-link {
+		/*width:15%;
+		padding:2%;*/
 	}
 
 	.site-footer {
