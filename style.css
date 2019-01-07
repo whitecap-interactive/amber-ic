@@ -1258,6 +1258,20 @@ h6::after {
 	-webkit-box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.25);
 	-moz-box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.25);
 	box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.25);
+	position: relative;
+}
+
+.resource-summary {
+	height: 100%;
+}
+
+.resource-card article {
+	height: 100%;
+}
+
+.resource-summary a {
+	position: absolute;
+	bottom: 20px;
 }
 
 .amberic-button {
