@@ -746,7 +746,7 @@ a:hover, a:active {
 }
 
 @media screen and (min-width: 60em) {
-	
+
 	h1 {
 		font-size: 40px;
 	}
@@ -757,7 +757,7 @@ a:hover, a:active {
 	.main-navigation ul li:hover > ul,
 	.main-navigation ul li.focus > ul {
 		left: -10px;
-	}	
+	}
 	.menu-toggle {
 		display: none;
 	}
@@ -770,10 +770,10 @@ a:hover, a:active {
 		display: inline-block;
 		float: left;
 		position: relative;
-	}	
+	}
 	.main-navigation ul ul a {
 		width: 160px;
-	}	
+	}
 }
 
 .site-main .comment-navigation, .site-main
@@ -1129,8 +1129,8 @@ ul#primary-menu>li {
 	background: #e8e8e8;
 }
 
-.sub-menu li a { 
-	color: #707070; 
+.sub-menu li a {
+	color: #707070;
 	display: inline-block;
 	padding: 8px 10px;
 }
@@ -1154,15 +1154,15 @@ ul#primary-menu>li {
 	ul#primary-menu>li>a {
 		line-height: 30px;
 		border-bottom: none;
-	}	
+	}
 	.menu-container {
 	    background: #588594;
-	}	
+	}
 }
 
 
 .content-area {
-	
+
 }
 
 .page-container, .single-container, .archive-container, .resources-container {
@@ -1211,7 +1211,7 @@ ul#primary-menu>li {
 }
 
 /*.archive-summary h4::after {*/
-h4::after {	
+h4::after {
     content: '';
     display: block;
     position: relative;
@@ -1222,7 +1222,7 @@ h4::after {
 }
 
 /*.archive-summary h4::after {*/
-h6::after {	
+h6::after {
     content: '';
     display: block;
     position: relative;
@@ -1233,7 +1233,7 @@ h6::after {
 }
 
 /*.archive-summary h4::after {*/
-.resources-container h2::after {	
+.resources-container h2::after {
     content: '';
     display: block;
     position: relative;
@@ -1314,12 +1314,11 @@ h6::after {
 }
 
 .single-container .entry-content {
-    width: 800px;
+    width: auto;
     position: relative;
-    top: -110px;
     background: #fff;
     margin: 0 auto;
-    padding: 30px 50px;
+    padding: 20px 0;
 }
 
 .mobile-footer {
@@ -1345,7 +1344,7 @@ h6::after {
 .site-footer .logo {
 	display: inline-block;
     width: 32%;
-    padding: 0 20px 0 0;	
+    padding: 0 20px 0 0;
 }
 
 .site-footer .address {
@@ -1361,26 +1360,26 @@ h6::after {
 
 
 @media screen and (min-width: 30em) {
-	
+
 	.resources-container .flex-container {
 		flex-direction: row;
 	}
 
 	.resource-card {
 		width: 45%;
-	}	
+	}
 
 }
 
 @media screen and (min-width: 60em) {
-	
+
 	.mobile-footer {
 		display: none;
 	}
 
 	.desktop-footer {
 		display: block;
-	}	
+	}
 
 	.resource-card {
 		width: 22%;
@@ -1393,7 +1392,7 @@ h6::after {
 
 	.site-footer {
 		padding: 100px 0 40px 0;
-	}	
+	}
 
 	.site-footer .logo {
 		width: auto;
@@ -1402,16 +1401,22 @@ h6::after {
 	.page-container, .single-container, .archive-container {
 		padding: 0;
 	}
-	
+
+	.single-container .entry-content {
+    width: 800px;
+		top: -110px;
+    padding: 30px 50px;
+	}
+
 	.site-footer .address {
 		border-left: 1px solid #fff;
 		padding: 0 0 0 40px;
-	}	
+	}
 
 	.site-footer .logo {
-		padding: 0 40px 0 0;	
-	}	
-	
+		padding: 0 40px 0 0;
+	}
+
 	.site-info {
 		padding: 0;
 	}
