@@ -128,6 +128,8 @@ function amber_ic_scripts() {
 
 	wp_enqueue_script( 'amber-ic-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
+	wp_enqueue_script( 'amber-ic-ga-event', get_template_directory_uri() . '/js/ga_event.js', array(), '20210622', true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -178,7 +180,7 @@ function create_post_type() {
 		'public' => true,
 		'has_archive' => true,
 		'capability_type' => 'post',
-		'rewrite' => array('slug' => 'organizations'),  
+		'rewrite' => array('slug' => 'organizations'),
 		'supports' => array(
             'title',
             'excerpt',
@@ -191,7 +193,7 @@ function create_post_type() {
         /*'show_in_nav_menus' => true*/
 		)
 	);
-} 
+}
 
 add_action( 'init', 'create_resources' );
 function create_resources() {
@@ -204,7 +206,7 @@ function create_resources() {
 		'public' => true,
 		'has_archive' => true,
 		'capability_type' => 'post',
-		'rewrite' => array('slug' => 'amber-resources'),  
+		'rewrite' => array('slug' => 'amber-resources'),
 		'supports' => array(
             'title',
             'excerpt',
@@ -217,7 +219,7 @@ function create_resources() {
         /*'show_in_nav_menus' => true*/
 		)
 	);
-} 
+}
 
 
 /**
@@ -225,10 +227,10 @@ function create_resources() {
  */
 add_filter( 'rwmb_meta_boxes', 'amberic_register_meta_boxes' );
 function amberic_register_meta_boxes( $meta_boxes ) {
-    
-    
+
+
     $prefix = 'amberic_';
-    
+
     // META BOXES FOR RESOURCES CUSTOM POST TYPE
     $meta_boxes[] = array(
         'title'      => __( 'Resource Details', $prefix ),
@@ -252,7 +254,7 @@ function amberic_register_meta_boxes( $meta_boxes ) {
 				'id'               => "{$prefix}pdf",
 				'type'             => 'file_advanced',
 				'mime_type'        => 'application,audio,video', // Leave blank for all file types
-			),			
+			),
         )
     );
 
@@ -313,15 +315,15 @@ add_action( 'init', 'resources_taxonomy_init' );
  */
 add_filter( 'rwmb_meta_boxes', 'tribal_register_meta_boxes' );
 function tribal_register_meta_boxes( $meta_boxes ) {
-    
-    
+
+
     // Get the users to display in the Admin Contact select box
     $tribalusers = get_users( 'blog_id=1&orderby=nicename&role=member' );
     // Array of WP_User objects.
-    $tribal_admin = array();    
-    foreach ( $tribalusers as $tribaluser ) $tribal_admin[$tribaluser->user_nicename] = $tribaluser->user_firstname . ' ' . $tribaluser->user_lastname;  
-    
-    
+    $tribal_admin = array();
+    foreach ( $tribalusers as $tribaluser ) $tribal_admin[$tribaluser->user_nicename] = $tribaluser->user_firstname . ' ' . $tribaluser->user_lastname;
+
+
     $prefix = 'tribal_';
     // Add Meta Boxes For Attached Documents (note: this applies to all images, pdfs, doc, and excel files)
     $meta_boxes[] = array(
@@ -518,7 +520,7 @@ function tribal_register_meta_boxes( $meta_boxes ) {
                     'WA' => esc_html__( 'Washington', $prefix ),
                     'WV' => esc_html__( 'West Virginia', $prefix ),
                     'WI' => esc_html__( 'Wisconsin', $prefix ),
-                    'WY' => esc_html__( 'Wyoming', $prefix ),                    
+                    'WY' => esc_html__( 'Wyoming', $prefix ),
 				),
 				// Select multiple values, optional. Default is false.
 				'multiple'    => false,
@@ -559,7 +561,7 @@ function tribal_register_meta_boxes( $meta_boxes ) {
 
 //ADD DROPDOWN TO USER PROFILE THAT DISPLAYS ORGANIZATIONS
 add_filter( 'user_meta_field_config', 'user_meta_field_config_populate_categories', 10, 3 );
-function user_meta_field_config_populate_categories( $field, $fieldID, $formName){ 
+function user_meta_field_config_populate_categories( $field, $fieldID, $formName){
 	//get list of organizations
  	/*$args = array(
 		'posts_per_page'   => -1,
@@ -578,7 +580,7 @@ function user_meta_field_config_populate_categories( $field, $fieldID, $formName
 		'author'	   => '',
 		'author_name'	   => '',
 		'post_status'      => 'publish',
-		'suppress_filters' => true 
+		'suppress_filters' => true
 	);*/
 	$args = array(
 		'posts_per_page'   => -1,
@@ -587,30 +589,30 @@ function user_meta_field_config_populate_categories( $field, $fieldID, $formName
 		'order'            => 'ASC',
 		'post_type'        => 'organization',
 		'post_status'      => 'publish',
-		'suppress_filters' => true 
+		'suppress_filters' => true
 	);
 	$posts_array = get_posts( $args );
 
     if( $fieldID != '15') // This has to match the Field ID of the User Meta Dropdown
         return $field;
- 	
+
     $output = null;
     $output .= 'other=Other,';
     foreach( $posts_array as $post ):
         $output .= $post->ID.'='.$post->post_name.',';
     endforeach;
     $output = ',' . trim( $output, ',' );
- 
+
     $field['options'] = $output;
- 
+
     return $field;
-}	
+}
 
 //List of admin email notification recipients
 function changeUMPAdminEmail( $adminEmails ) {
     return array( 'david@whitecap.io' );
 }
-add_filter( 'user_meta_admin_email_recipient', 'changeUMPAdminEmail' );	
+add_filter( 'user_meta_admin_email_recipient', 'changeUMPAdminEmail' );
 
 
 
@@ -643,8 +645,8 @@ function global_docs_meta_boxes( $meta_boxes )
 				//'mime_type'        => 'application,audio,video', // Leave blank for all file types
 			),
         )
-    );    
-    
+    );
+
 	return $meta_boxes;
 }
 
